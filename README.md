@@ -9,7 +9,7 @@ Simple table printing for Python CLI tools.
 ## How to install
 
 ```
-$ python setup.py install
+$ pip install tbl
 ```
 
 ## Development
