@@ -5,3 +5,11 @@ python:
   - "3.6"
 script:
   - python setup.py test
+deploy:
+  provider: pypi
+  user: AstromechZA
+  password: 
+    secure: "DkvkfttrwYze3/EfPl6nzDfA2kKicqGFWvQ+KiQ/GznToSm1Cd9VCbuX2YL8pMu/44Aka+INOGk1dvNzwrMhyAsmOP58DLgcME0LpqfhTZ+Ft5vzE5klO8St8fmCNmF/nMUWixRJqzzKAaRf0uSZiETwwf9AdceBcTk8ugqoewSisZb9qyakA2CZZ/56659qNTpOVDqd9bLdPvOuw86uwN3JZjI+91Pq3jJL8Med7p8kQSbT8d2WZMrWDiFtWzSAnhLyA1KwZK8d+CTdM/eZ8QDZe+tumM5wTanQtQAlDUhV2ALg+9xmVzh4ZFkqe8Txt+yJjAhvJpraYtlYG2EJuTItY6YoerRiSvdMcsyakOCwma97/ZWSnYteiunwjeLX/fJfP0XDqLlfI0OyDGquO6IVrPZjPDN4riPzHRGgtT6DXhchJ5Ju0dQnPgAy5bCavjyEkfIBaRF8dMmoLbRh6SciAmY8aM2jLydf/A9aylFt0RStcb6yKjnu8wwzRAteRwXgjYit6jMwcSaj+eFWJ5MlA92S6P1AaFYGRFG7544Tm3WaNGJaoRsHDN3NU+qfE9AUKw1h8Avz8V0kSGQeewOEFVi2syzWK4NlvkPx35v+InymiyulWEKCMjAue3gFwZ6DvxM0Pj0GJWL/sC2/NbCHjGbWaWFewW8sZun8wqg="
+  on:
+    branch: master
+  distributions: "sdist bdist_egg bdist_wheel"
