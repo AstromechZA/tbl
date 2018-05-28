@@ -28,7 +28,10 @@ setup(
     ],
 
     # needs this if using setuptools_scm
-    use_scm_version=True,
+    use_scm_version=(lambda: dict(
+        version_scheme=lambda t: str(t.tag),
+        local_scheme=lambda t: '',
+    )),
 
     # test dependencies
     tests_require=_tests_require,
