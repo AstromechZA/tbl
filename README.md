@@ -1,5 +1,7 @@
 # `tbl` - Readme
 
+[![Build Status](https://travis-ci.org/AstromechZA/tbl.svg?branch=master)](https://travis-ci.org/AstromechZA/tbl)
+
 Simple table printing for Python CLI tools
 
 ## How to install
