@@ -17,6 +17,7 @@ $ pip install tbl
 ```
 $ virtualenv --no-site-packages venv && source venv/bin/activate
 $ python setup.py develop
+$ python setup.py test
 ```
 
 And then run the tests with:
@@ -29,4 +30,10 @@ If you need test dependencies for writing new tests, you can install them with:
 
 ```
 $ pip install .[test]
+```
+
+You can also run the entire test suite on multiple python versions using `tox`:
+
+```
+$ tox
 ```
