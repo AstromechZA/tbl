@@ -19,7 +19,10 @@ setup(
 
     # run time requirements
     # exact versions are in the requirements.txt file
-    install_requires=[],
+    install_requires=[
+        'wcwidth==0.1.7',
+        'future',
+    ],
 
     # need this for setup.py test
     setup_requires=[
